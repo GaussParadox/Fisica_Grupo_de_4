@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://8wo7bi4jtk3a"]
+
+[ext_resource type="Texture2D" uid="uid://bgckflvg5lp2m" path="res://icon.svg" id="1_3egw0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlhk0"]
+size = Vector2(1000, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qft1g"]
+size = Vector2(64, 64)
+
+<<<<<<< HEAD
+=======
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qft1g"]
+bounce = 0.6
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dlhk0"]
+radius = 32.0
+
+>>>>>>> ea2b1f1 (Actualizacion de taller)
+[node name="Laboratorio" type="Node2D" unique_id=1245843129]
+
+[node name="Piso" type="StaticBody2D" parent="." unique_id=423031083]
+position = Vector2(576, 600)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piso" unique_id=1524186884]
+shape = SubResource("RectangleShape2D_dlhk0")
+
+[node name="ColorRect" type="ColorRect" parent="Piso" unique_id=166416991]
+offset_left = -500.0
+offset_top = -20.0
+offset_right = 500.0
+offset_bottom = 20.0
+color = Color(0, 0, 0, 1)
+
+[node name="Caja" type="RigidBody2D" parent="." unique_id=231576226]
+position = Vector2(850, 548)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja" unique_id=1858151671]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja" unique_id=719720790]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="CajaLigera" type="RigidBody2D" parent="." unique_id=1592111034]
+<<<<<<< HEAD
+position = Vector2(300, 150)
+=======
+position = Vector2(-42, 688)
+>>>>>>> ea2b1f1 (Actualizacion de taller)
+
+[node name="Sprite2D" type="Sprite2D" parent="CajaLigera" unique_id=722139960]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CajaLigera" unique_id=716787672]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="CajaPesada" type="RigidBody2D" parent="." unique_id=1249252099]
+<<<<<<< HEAD
+position = Vector2(450, 150)
+=======
+position = Vector2(108, 688)
+>>>>>>> ea2b1f1 (Actualizacion de taller)
+
+[node name="Sprite2D" type="Sprite2D" parent="CajaPesada" unique_id=857025211]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CajaPesada" unique_id=327290096]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja2" type="RigidBody2D" parent="." unique_id=955307150]
+position = Vector2(850, 484)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja2" unique_id=1126738733]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja2" unique_id=529496560]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja3" type="RigidBody2D" parent="." unique_id=1680624707]
+position = Vector2(850, 420)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja3" unique_id=2098832761]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja3" unique_id=365878584]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja4" type="RigidBody2D" parent="." unique_id=1380904913]
+position = Vector2(850, 356)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja4" unique_id=36190136]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja4" unique_id=237720163]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja5" type="RigidBody2D" parent="." unique_id=135166036]
+position = Vector2(850, 292)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja5" unique_id=71551128]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja5" unique_id=1402239204]
+shape = SubResource("RectangleShape2D_qft1g")
+<<<<<<< HEAD
+=======
+
+[node name="Bola" type="RigidBody2D" parent="." unique_id=503522333]
+position = Vector2(150, 400)
+mass = 3.0
+physics_material_override = SubResource("PhysicsMaterial_qft1g")
+continuous_cd = 1
+linear_velocity = Vector2(900, -400)
+
+[node name="Sprite2D" type="Sprite2D" parent="Bola" unique_id=234883764]
+modulate = Color(0.9449888, 0.024141373, 9.62615e-07, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3egw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bola" unique_id=220480969]
+shape = SubResource("CircleShape2D_dlhk0")
+>>>>>>> ea2b1f1 (Actualizacion de taller)
