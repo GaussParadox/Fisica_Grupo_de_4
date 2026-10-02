@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://xvyap7ky8h78"]
+
+[ext_resource type="Texture2D" uid="uid://bgckflvg5lp2m" path="res://icon.svg" id="1_idy6a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlhk0"]
+size = Vector2(1000, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qft1g"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgkry"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mgkry"]
+radius = 26.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4yht"]
+size = Vector2(160, 300)
+
+[node name="Laboratorio" type="Node2D" unique_id=1245843129]
+
+[node name="Piso" type="StaticBody2D" parent="." unique_id=423031083]
+position = Vector2(576, 600)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Piso" unique_id=1524186884]
+shape = SubResource("RectangleShape2D_dlhk0")
+
+[node name="ColorRect" type="ColorRect" parent="Piso" unique_id=166416991]
+offset_left = -500.0
+offset_top = -20.0
+offset_right = 500.0
+offset_bottom = 20.0
+color = Color(0, 0, 0, 1)
+
+[node name="Caja" type="RigidBody2D" parent="." unique_id=231576226]
+position = Vector2(850, 548)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja" unique_id=1858151671]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja" unique_id=719720790]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="CajaLigera" type="RigidBody2D" parent="." unique_id=1592111034]
+position = Vector2(-42, 688)
+
+[node name="Sprite2D" type="Sprite2D" parent="CajaLigera" unique_id=722139960]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CajaLigera" unique_id=716787672]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="CajaPesada" type="RigidBody2D" parent="." unique_id=1249252099]
+position = Vector2(108, 688)
+
+[node name="Sprite2D" type="Sprite2D" parent="CajaPesada" unique_id=857025211]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CajaPesada" unique_id=327290096]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja2" type="RigidBody2D" parent="." unique_id=955307150]
+position = Vector2(850, 484)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja2" unique_id=1126738733]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja2" unique_id=529496560]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja3" type="RigidBody2D" parent="." unique_id=1680624707]
+position = Vector2(850, 420)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja3" unique_id=2098832761]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja3" unique_id=365878584]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja4" type="RigidBody2D" parent="." unique_id=1380904913]
+position = Vector2(850, 356)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja4" unique_id=36190136]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja4" unique_id=237720163]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Caja5" type="RigidBody2D" parent="." unique_id=135166036]
+position = Vector2(850, 292)
+
+[node name="Sprite2D" type="Sprite2D" parent="Caja5" unique_id=71551128]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Caja5" unique_id=1402239204]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Cajaflotante" type="RigidBody2D" parent="." unique_id=274919983]
+position = Vector2(991.8745, 477.75986)
+rotation = 0.49741885
+
+[node name="Sprite2D" type="Sprite2D" parent="Cajaflotante" unique_id=985227580]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cajaflotante" unique_id=667837264]
+shape = SubResource("RectangleShape2D_qft1g")
+
+[node name="Ancla" type="StaticBody2D" parent="." unique_id=472802261]
+position = Vector2(620, 100)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ancla" unique_id=1579647953]
+position = Vector2(-10, -10)
+shape = SubResource("RectangleShape2D_mgkry")
+debug_color = Color(1, 0, 0.14901961, 0.8784314)
+
+[node name="Peso" type="RigidBody2D" parent="." unique_id=1777582002]
+position = Vector2(320, 100)
+mass = 5.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Peso" unique_id=1365266728]
+modulate = Color(0.27430728, 0.69754994, 0.43504187, 1)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_idy6a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Peso" unique_id=305293548]
+shape = SubResource("CircleShape2D_mgkry")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=915960757]
+position = Vector2(620, 100)
+node_a = NodePath("../Ancla")
+node_b = NodePath("../Peso")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1465805940]
+position = Vector2(576, 324)
+zoom = Vector2(0.8, 0.8)
+
+[node name="ZonaAntigravedad" type="Area2D" parent="." unique_id=1149452550]
+position = Vector2(990, 400)
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+gravity = 400.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaAntigravedad" unique_id=1227839520]
+shape = SubResource("RectangleShape2D_l4yht")
+
+[node name="ColorRect" type="ColorRect" parent="ZonaAntigravedad" unique_id=2101085718]
+offset_left = -80.0
+offset_top = -150.0
+offset_right = 80.0
+offset_bottom = 150.0
+color = Color(1, 0.18039216, 0.2627451, 0.3882353)
